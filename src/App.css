@@ -90,3 +90,16 @@ h1 {
   cursor: pointer;
 }
  
+.completed-task {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item input {
+  margin-right: 10px;
+}

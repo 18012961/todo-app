@@ -52,7 +52,7 @@ const TodoWrapper = () => {
       <TodoForm addTodo={addTodo} />
       {/* Display todos */}
       {todos.map((todo) => (
-        <div key={todo.id}>  {/* Key should be on the parent of the returned element */}
+        <div key={todo.id}>
           {todo.isEditing ? (
             <EditTodoForm editTodo={editTask} task={todo} />
           ) : (
@@ -69,4 +69,4 @@ const TodoWrapper = () => {
   );
 };
 
-export default TodoWrapper;  // Default export
+export default TodoWrapper;
